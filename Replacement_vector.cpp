@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int N;
+    cin>>N;
+    vector<int> A(N);
+    for(int x=0;x<N;x++){
+        cin>>A[x];
+    }
+    for (int i = 0; i < N; i++) {
+       if (A[i] > 0) {
+           A[i] = 1;
+         } else if (A[i] < 0) {
+              A[i] = 2;
+        }
+    }
+
+        for(int x:A){
+            cout<<x<<" ";
+        }
+
+    return 0;
+}
